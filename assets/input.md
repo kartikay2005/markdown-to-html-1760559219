@@ -1,23 +1,34 @@
-# Sample Markdown Document
+# Enhanced Markdown Document
 
-This is a **sample** markdown document with various elements:
+This is an **enhanced** markdown document for Round 2 testing. It contains more content and various elements:
 
-## Code Block
+## Features
+
+- **Tabs**: Switch between HTML and Markdown view
+- **URL Loading**: Load markdown from external URLs
+- **Word Count**: Live word count with formatting
+
+## Code Example
 
 ```javascript
-function helloWorld() {
-    console.log("Hello, World!");
+function updateWordCount(text) {
+    const words = text.split(/\s+/).filter(word => word.length > 0);
+    const count = words.length;
+    const formatted = new Intl.NumberFormat().format(count);
+    document.getElementById('markdown-word-count').textContent = formatted;
 }
 ```
 
-## List
+## More Content
 
-- Item 1
-- Item 2
-- Item 3
+This document has additional content to test the word counting functionality. Each word counts toward the total.
 
-## Link
+1. Numbered list item 1
+2. Numbered list item 2
+3. Numbered list item 3
 
-[Visit GitHub](https://github.com)
+> This is a blockquote that adds more words to the document for testing purposes.
 
-This document contains various markdown elements for proper rendering testing.
+### Subsection
+
+**Bold text** and *italic text* are also included to ensure proper rendering and word counting.
